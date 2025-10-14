@@ -101,3 +101,53 @@ Run TestValidatingAdmissionPolicy ODH test
     [Setup]       Enable appwrapper in Codeflare operator
     [Teardown]    Disable appwrapper in Codeflare operator
     Run DistributedWorkloads ODH Test    TestValidatingAdmissionPolicy    ${RAY_CUDA_IMAGE_3.11}    ${NOTEBOOK_IMAGE_3.11}
+
+Run TestKueueRayCpu ODH test with Python 3.12
+    [Documentation]    Run Go ODH test: TestKueueRayCpu with Python 3.12
+    [Tags]  ODS-2514
+    ...     qqq
+    ...     DistributedWorkloads
+    ...     TrainingRay
+    ...     WorkloadsOrchestration
+    ...     Python312
+    Run DistributedWorkloads ODH Test    TestMnistRayCpu    ${RAY_CUDA_IMAGE_3.12}    ${NOTEBOOK_IMAGE_3.11}
+
+Run TestKueueRayCudaGpu ODH test with Python 3.12
+    [Documentation]    Run Go ODH test: TestKueueRayCudaGpu with Python 3.12
+    [Tags]  Resources-GPU    NVIDIA-GPUs
+    ...     qqq
+    ...     DistributedWorkloads
+    ...     TrainingRay
+    ...     WorkloadsOrchestration
+    ...     Python312
+    Run DistributedWorkloads ODH Test    TestMnistRayCudaGpu    ${RAY_CUDA_IMAGE_3.12}    ${NOTEBOOK_IMAGE_3.11}
+
+Run TestKueueRayROCmGpu ODH test with Python 3.12
+    [Documentation]    Run Go ODH test: TestKueueRayROCmGpu with Python 3.12
+    [Tags]  Resources-GPU    AMD-GPUs    ROCm
+    ...     qqq
+    ...     DistributedWorkloads
+    ...     TrainingRay
+    ...     WorkloadsOrchestration
+    ...     Python312
+    Run DistributedWorkloads ODH Test    TestMnistRayROCmGpu    ${RAY_ROCM_IMAGE_3.12}    ${NOTEBOOK_IMAGE_3.11}
+
+Run TestRayTuneHPOCpu ODH test with Python 3.12
+    [Documentation]    Run Go ODH test: TestMnistRayTuneHpoCpu with Python 3.12
+    [Tags]  RHOAIENG-10004
+    ...     qqq
+    ...     DistributedWorkloads
+    ...     TrainingRay
+    ...     WorkloadsOrchestration
+    ...     Python312
+    Run DistributedWorkloads ODH Test    TestMnistRayTuneHpoCpu    ${RAY_CUDA_IMAGE_3.12}    ${NOTEBOOK_IMAGE_3.11}
+
+Run TestRayTuneHPOGpu ODH test with Python 3.12
+    [Documentation]    Run Go ODH test: TestMnistRayTuneHpoGpu with Python 3.12
+    [Tags]  Resources-GPU    NVIDIA-GPUs
+    ...     qqq
+    ...     DistributedWorkloads
+    ...     TrainingRay
+    ...     WorkloadsOrchestration
+    ...     Python312
+    Run DistributedWorkloads ODH Test    TestMnistRayTuneHpoGpu    ${RAY_CUDA_IMAGE_3.12}    ${NOTEBOOK_IMAGE_3.11}

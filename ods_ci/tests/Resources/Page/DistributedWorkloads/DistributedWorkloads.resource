@@ -30,6 +30,11 @@ ${ROCM_TRAINING_IMAGE_TORCH241}          quay.io/modh/training@sha256:883739b576
 ${CUDA_TRAINING_IMAGE_TORCH251}          quay.io/modh/training@sha256:1d0caea3e5d56ff7d672954b1ad511e661df9bdb364d56879961169a4ca8dae0
 # Corresponds to quay.io/modh/training:py311-rocm62-torch251
 ${ROCM_TRAINING_IMAGE_TORCH251}          quay.io/modh/training@sha256:6cdae840fa029da33cccab620367e82404d24ddf67762eb4537a9bffe1af306d
+# Python 3.12 training images (placeholder - update when images are available)
+# Corresponds to quay.io/modh/training:py312-cuda124-torch251 (to be updated when available)
+${CUDA_TRAINING_IMAGE_TORCH251_PY312}    ${CUDA_TRAINING_IMAGE_TORCH251}
+# Corresponds to quay.io/modh/training:py312-rocm62-torch251 (to be updated when available)
+${ROCM_TRAINING_IMAGE_TORCH251_PY312}    ${ROCM_TRAINING_IMAGE_TORCH251}
 # Corresponds to quay.io/repository/modh/odh-workbench-jupyter-datascience-cpu-py311-ubi9:rhoai-2.22
 ${NOTEBOOK_IMAGE_3.11}                   quay.io/modh/odh-workbench-jupyter-datascience-cpu-py311-ubi9@sha256:48c2be818e8d2a5005a69e2c76f9a2d40ddeb1d03376e04516ca6da13418c887
 ${NOTEBOOK_USER_NAME}                    ${TEST_USER_3.USERNAME}
